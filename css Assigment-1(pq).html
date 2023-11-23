@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css Assigment-1</title>
+  <style>
+    body{
+      background-color: wheat;
+    }
+  </style>
+  
+
+<link rel="stylesheet" href="./css Assigment-1(pq)_files/style.css"></head>
+<body>
+  <!-- Poem Name -->
+  <h1><span>Ozymandias</span></h1>
+  <!-- poet's Name -->
+  <h3> by Percy Bysshe Shelley</h3>
+  <!-- poem -->
+  <p>
+    I MET a traveller from an antique land,<br>
+    Who said:—Two vast and trunkless legs of stone<br>
+    Stand in the desert. Near them on the sand,<br>
+    Half sunk, a shatter'd visage lies, whose frown<br>
+    And wrinkled lip and sneer of cold command,<br>
+    Tell that its sculptor well those passions read<br>
+    Which yet survive, stamp'd on these lifeless things,<br>
+    The hand that mock'd them and the heart that fed.<br>
+    And on the pedestal these words appear:<br>
+    "My name is Ozymandias, king of kings: <br>
+    Look on my works, ye mighty, and despair!"<br>
+    Nothing beside remains: round the decay<br>
+    Of that colossal wreck, boundless and bare,<br>
+    The lone and level sands stretch far away.<br>
+  </p>
+  <hr>
+  <h4>Read up more about the poem on
+<a href="https://en.wikipedia.org/wiki/Ozymandias">Wikipedia</a>
+</h4>
+<span>
+  <textarea placeholder="Leave your comments here.."></textarea>
+</span>
+
+<br><br>
+<button>Comment</button>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+        
+    
+
+        </body></html>
